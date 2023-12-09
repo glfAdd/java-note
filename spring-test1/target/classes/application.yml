@@ -1,0 +1,5 @@
+server:
+  port: 10469 #服务端口号
+spring:
+  application:
+    name: aa1
