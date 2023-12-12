@@ -30,6 +30,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.7.8</version>
+            <!-- 去掉 spring boot 默认的 logback 的jar包依赖，和 log4j2 冲突 -->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- 参数校验 -->
@@ -54,8 +61,11 @@
             <version>4.0.0</version>
         </dependency>
 
-
+        <!-- 日志 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+            <version>3.2.0</version>
+        </dependency>
     </dependencies>
-
-
 </project>

@@ -3,6 +3,7 @@ package glfadd.controller;
 import glfadd.entity.Animal;
 import glfadd.entity.User;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +14,7 @@ import java.util.Objects;
 // 标记类 / 方法 可以处理 http 请求
 @RestController
 @RequestMapping("/api")
+@Slf4j
 public class UserController {
     // url 参数
     @RequestMapping(value = "v1/{name}/{age}", method = RequestMethod.GET)
@@ -30,6 +32,7 @@ public class UserController {
             @RequestParam(defaultValue = "Lucy") String name,
             // 允许为空
             @RequestParam(required = false) Integer age) {
+        log.info(name);
         return ResponseEntity.ok(name + age);
     }
 
