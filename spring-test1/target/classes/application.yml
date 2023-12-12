@@ -1,5 +1,26 @@
+# application
 server:
   port: 10469 #服务端口号
 spring:
   application:
     name: aa1
+
+# 文档
+knife4j:
+  enable: true
+  openapi:
+    title: Knife4j 文档
+    description: 文档测试
+    email: xiaoymin@foxmail.com
+    concat: test
+    url: https://docs.xiaominfo.com
+    version: v4.0
+    license: Apache 2.0
+    license-url: https://stackoverflow.com/
+    terms-of-service-url: https://stackoverflow.com/
+    group:
+      test1:
+        group-name: 分组名称
+        api-rule: package
+        api-rule-resources:
+          - com.knife4j.demo.new3
