@@ -21,7 +21,7 @@ $ sdk default java 8.0.352-amzn
 # 临时切换版本
 $ sdk use java 8.0.352-amzn
 
-# ------------------------------------ maven
+# ------------------------------------ maven (未使用)
 $ sdk ls maven
 $ sdk install maven
 $ sdk install maven 3.9.2
