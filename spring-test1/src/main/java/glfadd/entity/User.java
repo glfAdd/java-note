@@ -7,17 +7,12 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.lang.Nullable;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
 @ApiModel("用户实体类")
 public class User {
-    @NotNull(message = "name 不能为空")
     @ApiModelProperty(
             value = "姓名", // 字段说明
             name = "name",// 重写属性名
@@ -27,8 +22,6 @@ public class User {
             hidden = false // 是否隐藏
     )
     private String name;
-    @Max(100)
-    @Min(1)
     private Integer age;
 
     // 定义属性名

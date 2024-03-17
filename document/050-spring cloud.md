@@ -1,3 +1,30 @@
+### 错误
+
+##### 启动错误 1
+
+```
+报错信息:
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+
+
+解决办法:
+application.yaml 添加
+debug: true
+```
+
+```
+
+application.properties
+
+application.yaml
+
+
+```
+
+
+
+
+
 ##### SLF4J - 1
 
 spring cloud 启动报错

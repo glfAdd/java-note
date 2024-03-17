@@ -1,8 +1,8 @@
 /*
-* 自定义 ObjectMapper, spring boot 使用 ObjectMapper 序列化和反序列化
-*
-*
-* */
+ * 自定义 ObjectMapper, spring boot 使用 ObjectMapper 序列化和反序列化
+ *
+ *
+ * */
 package glfadd.config;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;

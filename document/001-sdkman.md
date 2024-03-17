@@ -47,4 +47,3 @@ $ sdk version        #查看sdkman版本
 ```
 
 
-
