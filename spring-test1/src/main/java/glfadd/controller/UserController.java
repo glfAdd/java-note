@@ -19,7 +19,7 @@ import java.util.Objects;
 @Api(tags = "测试2")
 public class UserController {
     // url 参数
-    @RequestMapping(value = "v1/{name}/{age}", method = RequestMethod.GET)
+    @RequestMapping(value = "/v1/{name}/{age}", method = RequestMethod.GET)
     @ApiOperation(value = "用户1", notes = "getUser1 notes")
     public String getUser1(@PathVariable String name, @PathVariable Integer age) {
         System.out.println(name);
@@ -28,19 +28,17 @@ public class UserController {
     }
 
     // form 表单参数
-    @GetMapping("user2")
+    @GetMapping("/user2")
     @ApiOperation(value = "用户2", notes = "getUser2 notes")
     public ResponseEntity<String> getUser2(
-            // 默认值
             @RequestParam(defaultValue = "Lucy") String name,
-            // 允许为空
             @RequestParam(required = false) Integer age) {
         log.info(name);
         return ResponseEntity.ok(name + age);
     }
 
     // map 接收
-    @GetMapping("user3")
+    @GetMapping("/user3")
     @ApiOperation(value = "用户3", notes = "getUser3 notes")
     public String getUser3(@RequestParam Map<String, Objects> params) {
         System.out.println(params);
@@ -48,27 +46,27 @@ public class UserController {
     }
 
     // 数组接收
-    @GetMapping("user4")
+    @GetMapping("/user4")
     public String getUser4(@RequestParam String[] name) {
         return "getUser4";
     }
 
     // 对象接收
-    @GetMapping("user5")
+    @GetMapping("/user5")
     public String getUser5(User user) {
         return "getUser5";
     }
 
     // 两个对象接收
-    @GetMapping("user6")
+    @GetMapping("/user6")
     public User getUser6(User user, Animal animal) {
-        User u =new User();
+        User u = new User();
         u.setAge(12);
         u.setName("Toom");
         return u;
     }
 
-    @PostMapping("user7")
+    @PostMapping("/user7")
     public String postUser7(@Valid @RequestBody User user) {
         return "getUser6";
     }

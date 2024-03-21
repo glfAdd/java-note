@@ -8,6 +8,14 @@ https://www.cnblogs.com/wl20200316/p/12579982.html 单例
 @ConditionalOnBean
 ```
 
+## Application
+
+### @SpringBootApplication
+
+```
+标识一个 Spring Boot 应用程序的启动类
+```
+
 ### @Component 
 
 ```
@@ -16,9 +24,10 @@ https://www.cnblogs.com/wl20200316/p/12579982.html 单例
 
 ### @Configuration
 
+```
+标识该类是一个配置类，通常用于定义配置信息、Bean 的定义等
 表示类作为 bean 定义的源
-
-
+```
 
 ##### Configuration 底层定义
 
@@ -35,6 +44,18 @@ public @interface Configuration {
 
     boolean proxyBeanMethods() default true;
 }
+```
+
+### @EnableAutoConfiguration
+
+```
+启用 Spring Boot 的自动配置机制，根据项目中的依赖和配置，自动配置 Spring 应用程序的环境
+```
+
+### @ComponentScan
+
+```
+启用组件扫描，自动扫描并注册 Spring 应用程序中的组件（包括 @Component、@Service、@Controller、@Repository 等）
 ```
 
 ### @Bean
@@ -621,4 +642,6 @@ public void addItems(String item) {
     items.add(item);
 }
 ```
+
+## http
 
