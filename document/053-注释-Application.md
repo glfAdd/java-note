@@ -280,8 +280,6 @@ public class AutoConfig {
 
 ### @Value
 
-##### 作用
-
 @Value 是 Spring 框架功能, 作用是通过注解将常量, 配置文件中的值, 其他bean的属性值注入到变量中，作为变量的初始值
 
 ##### 常量注入
@@ -301,8 +299,6 @@ private Resource resource;
 @Value("http://www.baidu.com")
 private Resource url; 
 ```
-
-##### 读取配置文件
 
 读取配置文件的值，注入到变量中去. 配置文件分为默认配置文件 application.properties 和自定义配置文件.
 

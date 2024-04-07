@@ -84,3 +84,10 @@ public class UserQuery {
 
 xml 文件传进来的参数
 
+##### 函数
+
+<img src="./image/mybatis 函数.png" alt="mybatis 函数" style="zoom:70%;" />
+
+```
+```
+
