@@ -4,8 +4,23 @@ server:
 spring:
   application:
     name: aa1
+  # 配置数据源
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test01?characterEncoding=utf8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
 
-debug: true
+mybatis-plus:
+  # 扫描 Mapper.xml 文件
+  mapper-locations: classpath*:mapper/*.xml
+  # 配置文件位置
+  config-location: classpath:mybatis-config.xml
+  # 设置别名的路径,可避免写全限定类名
+#  type-aliases-package:
+
+
+#debug: true
 #  cloud:
 #    nacos:
 #      discovery:
