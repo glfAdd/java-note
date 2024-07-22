@@ -2,7 +2,6 @@
 
 ##### 参考
 
-- [ ] https://baomidou.com/pages/56bac0/#typealiasespackage
 - [ ] https://www.cnblogs.com/xfeiyun/p/16182946.html
 - [ ] https://blog.csdn.net/qq_46138492/article/details/129477550?spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-12-129477550-blog-104222542.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-12-129477550-blog-104222542.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=18
 - [ ] 
