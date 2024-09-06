@@ -1,6 +1,6 @@
 [TOC]
 
-### 优化
+### 设置
 
 ```
 -Xms512m 设置初时的内存大小，提高Java程序的启动速度
@@ -55,15 +55,32 @@ com + F9	手动构建(Build Project)
 
 <img src="./image/idea debug立即结束进程.png" alt="idea debug立即结束进程" style="zoom:40%;" />
 
+##### 编译
+
+<img src="./image/idea编译设置.png" alt="idea编译设置" style="zoom:80%;" />
+
+编译内存
+
+<img src="./image/idea编译内存.png" alt="idea编译内存" style="zoom:40%;" />
+
+##### 
+
+<img src="./image/代码自动缩进.png" alt="代码自动缩进" style="zoom:90%;" />
+
+<img src="./image/代码自动缩进2.png" alt="代码自动缩进" style="zoom:90%;" />
 
 
 
+
+
+```
+```
 
 
 
 ### 插件
 
-##### SequenceDiagram
+##### SequenceDiagram Core
 
 序图和类图
 
@@ -104,6 +121,8 @@ https://blog.csdn.net/youanyyou/article/details/113988539
   Restful Api Tool (暂时不用) 6k
 ```
 
+<img src="./image/apifox令牌设置.png" alt="apifox令牌设置" style="zoom:80%;" />
+
 ##### Stack trace to UML
 
 ```
@@ -125,7 +144,13 @@ Stack trace to UML 支持根据 JVM 异常堆栈画 UML时序图和通信图。
 
  json 转对象
 
+##### MybatisX
+
+mapper 和 xml 跳转
+
 ##### Mybatis log
+
+
 
 ##### Mybatis log Free
 

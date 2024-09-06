@@ -94,7 +94,55 @@ JDK 版本太高, 与项目的不对应
 删除不可用的 springfox-swagger-ui 包, maven clean 重新构建
 ```
 
+##### 启动错误 8
 
+```
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field xxx in xxxxxController required a bean of type 'xxxxx' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'xxxxx' in your configuration.
+
+
+
+
+添加注释 @Service
+public interface A {
+}
+@Service
+public class B implements A {
+}
+```
+
+##### 启动错误 9
+
+```
+/Users/glfadd/Downloads/source/service-3/src/main/java/com/glf/service3/config/SwaggerConfig.java:3:54
+java: 无法访问com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j
+  错误的类文件: /Users/glfadd/.m2/repository/com/github/xiaoymin/knife4j-openapi3-jakarta-spring-boot-starter/4.5.0/knife4j-openapi3-jakarta-spring-boot-starter-4.5.0.jar!/com/github/xiaoymin/knife4j/spring/annotations/EnableKnife4j.class
+    类文件具有错误的版本 61.0, 应为 55.0
+    请删除该文件或确保该文件位于正确的类路径子目录中。
+    
+```
+
+##### 启动错误 10
+
+```
+idea maven 工具提示 "找不到符号"
+
+
+执行: mvn idea:idea
+
+
+
+```
 
 
 
@@ -234,6 +282,14 @@ java.lang.IllegalArgumentException: dataSource or dataSourceClassName or jdbcUrl
 
 ```
 2024-07-02 15:51:19 [RMI TCP Connection(2)-10.133.88.194] ERROR com.zaxxer.hikari.HikariConfig - HikariPool-1 - dataSource or dataSourceClassName or jdbcUrl is required.
+
+
+原因
+
+
+解决办法
+
+
 ```
 
 
@@ -242,5 +298,13 @@ java.lang.IllegalArgumentException: dataSource or dataSourceClassName or jdbcUrl
 
 ```
 HikariPool-1 - jdbcUrl is required with driverClassName.
+```
+
+
+
+##### 
+
+```
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33
 ```
 
