@@ -68,6 +68,26 @@ $ ${user.home}/.m2/settings.xml
 </mirror>
 ```
 
+##### IDEA 创建 maven 项目
+
+Archetype 是 Maven 工程的模板工具包, 帮助用户创建 Maven 工程模板
+
+```
+maven-archetype-archetype			一个样例原型
+maven-archetype-j2ee-simple		简单的J2EE应用程序样例
+maven-archetype-mojo					Maven插件样本的示例
+maven-archetype-plugin				Maven插件样本
+maven-archetype-plugin-site		Maven插件网站的样例
+maven-archetype-portlet				JSR-268门户样例
+maven-archetype-quickstart		Maven工程样例
+maven-archetype-simple				一个简单的Maven工程
+maven-archetype-site					Maven网站的样例，它演示了对诸如APT、XDoc和FML等文档类型的支持，并演示了如果把网站国际化（i18n）
+maven-archetype-site-simple		Maven网站样例
+maven-archetype-webapp				Maven的Webapp工程样例
+```
+
+<img src="./image/idea创建maven项目.png" alt="idea创建maven项目" style="zoom:80%;" />
+
 ##### 命令
 
 ```bash
@@ -248,6 +268,27 @@ $ mvn archetype:generate
   $ nohup java -Xmx1000m -Xms1000m -jar ./target/projecttime-1.0-SNAPSHOT.jar --server.port=11309 > /dev/null 2>&1 &
   ```
 
+##### spring-boot-maven-plugin
+
+```
+作用: spring-boot-maven-plugin 是将项目依赖的 jar包打包进 jar 或者 war 当中.
+
+
+打包
+$ mvn package spring-boot:repackage
+
+
+1. 如果没有添加 maven 插件, 导致没把依赖的包打进去, 通过命令 java -jar springboot-0.0.1-SNAPSHOT.jar 启动程序失败.
+2. 添加 maven 插件重新clear，install，打包正常19M. 通过命令 java -jar springboot-0.0.1-SNAPSHOT.jar 可以正常启动项目.
+
+解压后文件夹:
+  BOOT-INF: 存放的该项目编译后的class文件，和依赖的jar包。
+  META-INF: 存放了项目的依赖jar包关系。
+  org: 存放了springboot相关的一些class文件。
+```
+
+
+
 ### 常见错误
 
 ##### 创建项目报错
@@ -284,19 +325,79 @@ pom.xml 和 当前环境 java 的版本不一致
 
 
 
+```
+ $ mvn compile
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.glf.service3:service-3 >---------------------
+[INFO] Building service-3 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ service-3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glfadd/Downloads/source/service-3/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ service-3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/glfadd/Downloads/source/service-3/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] 不再支持源选项 5。请使用 7 或更高版本。
+[ERROR] 不再支持目标选项 5。请使用 7 或更高版本。
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.331 s
+[INFO] Finished at: 2024-08-13T15:03:07+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project service-3: Compilation failure: Compilation failure: 
+[ERROR] 不再支持源选项 5。请使用 7 或更高版本。
+[ERROR] 不再支持目标选项 5。请使用 7 或更高版本。
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 
 
-
-
-
-
+解决办法:
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.compilerVersion>11</maven.compiler.compilerVersion>
+    </properties>
 ```
 
+
+
+##### mvn clean
+
 ```
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.glf.service3:service-3:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 89, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
 
 
-
-
+解决办法:
+<parent>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-parent</artifactId>
+  <version>3.3.2</version>
+  <relativePath/>
+</parent>
+```
 
 
 
