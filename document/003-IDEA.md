@@ -1,6 +1,6 @@
 [TOC]
 
-### 优化
+# 优化
 
 ```
 -Xms512m 设置初时的内存大小，提高Java程序的启动速度
@@ -55,15 +55,9 @@ com + F9	手动构建(Build Project)
 
 <img src="./image/idea debug立即结束进程.png" alt="idea debug立即结束进程" style="zoom:40%;" />
 
+# 插件
 
-
-
-
-
-
-### 插件
-
-##### SequenceDiagram
+##### SequenceDiagram Core
 
 序图和类图
 
@@ -256,6 +250,68 @@ JRebel debug 无法启动
 ```
 
 
+
+# java 项目
+
+```
+创建项目
+
+
+创建模块
+
+```
+
+##### Archetype
+
+[maven arch type 说明](https://maven.apache.org/archetype/index.html)
+
+```
+maven-archetype-archetype			生成示例原型项目的原型
+maven-archetype-j2ee-simple		一种原型，用于生成简化的示例J2EE应用程序
+maven-archetype-mojo					用于生成示例Maven插件示例的原型
+maven-archetype-plugin				生成示例Maven插件的原型
+maven-archetype-plugin-site		生成示例Maven插件站点的原型
+maven-archetype-portlet				生成样本JSR-268 Portlet的原型
+maven-archetype-quickstart		生成示例Maven项目的原型
+maven-archetype-simple				生成简单Maven项目的原型
+maven-archetype-site					生成示例Maven站点，该站点演示了一些受支持的文档类型，例如APT，XDoc和FML，并演示了如何构建您的站点
+maven-archetype-site-simple		用于生成示例Maven站点的原型
+maven-archetype-webapp				用于生成示例Maven Webapp项目的原型
+```
+
+##### 
+
+```
+
+$ mvn archetype:generate
+
+
+
+Maven 插件允许我们从已有项目生成一个模板项目。在项目根目录下执行mvn archetype:create-from-project命令即可将该项目生成一个项目模板，生成的项目原型被保存在路径target/generated-sources/archetype
+
+
+
+
+
+```
+
+
+
+```
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.499 s
+[INFO] Finished at: 2024-09-01T10:01:18+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] No plugin found for prefix 'archtype' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (/Users/lg/.m2/repository), alimaven (http://maven.aliyun.com/nexus/content/groups/public/)] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/NoPluginFoundForPrefixException
+```
 
 
 

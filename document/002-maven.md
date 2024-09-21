@@ -159,6 +159,20 @@ $ mvn generate-sources 						# 产生应用需要的任何额外的源代码
 
 ### 项目打包
 
+##### 创建项目
+
+```bash
+$ mvn archetype:generate
+  步骤
+  1. Choose archetype:
+  2. Define value for property 'groupId':
+  3. Define value for property 'artifactId':
+  4. Define value for property 'version' 1.0-SNAPSHOT: :
+  5. Define value for property 'package' com.glf: :
+```
+
+
+
 ```
 打包的机制
 如pom,jar, maven-plugin, ejb, war, ear, rar, par，默认为 jar
@@ -262,6 +276,11 @@ pom.xml 和 当前环境 java 的版本不一致
 ```
 
 ##### 
+
+```
+```
+
+
 
 
 
