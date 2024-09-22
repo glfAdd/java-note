@@ -1,10 +1,6 @@
 [TOC]
 
-<<<<<<< HEAD
-# 优化
-=======
 ### 设置
->>>>>>> 4ae4e91a87983010242fc6e7a9d404e60abfe1de
 
 ```
 -Xms512m 设置初时的内存大小，提高Java程序的启动速度
@@ -59,10 +55,6 @@ com + F9	手动构建(Build Project)
 
 <img src="./image/idea debug立即结束进程.png" alt="idea debug立即结束进程" style="zoom:40%;" />
 
-<<<<<<< HEAD
-# 插件
-
-=======
 ##### 编译
 
 <img src="./image/idea编译设置.png" alt="idea编译设置" style="zoom:80%;" />
@@ -88,7 +80,6 @@ com + F9	手动构建(Build Project)
 
 ### 插件
 
->>>>>>> 4ae4e91a87983010242fc6e7a9d404e60abfe1de
 ##### SequenceDiagram Core
 
 序图和类图
