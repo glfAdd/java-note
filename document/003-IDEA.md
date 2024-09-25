@@ -130,7 +130,11 @@ Stack trace to UML 支持根据 JVM 异常堆栈画 UML时序图和通信图。
 打开方式 Analyze > Open Stack trace to UML plugin + Generate UML diagrams from stacktrace from debug
 ```
 
-##### VisualGC
+##### JDK VisualGC
+
+> https://plugins.jetbrains.com/plugin/14557-jdk-visualgc
+>
+> 实时可视化Hotspot JVM垃圾回收监控工具，支持查看本地和远程JVM进程，支持G1和ZGC算法
 
 ```
 
@@ -146,15 +150,19 @@ Stack trace to UML 支持根据 JVM 异常堆栈画 UML时序图和通信图。
 
 ##### MybatisX
 
-mapper 和 xml 跳转
+> https://plugins.jetbrains.com/plugin/10119-mybatisx
+>
+>  mapper 和 xml 跳转
 
 ##### Mybatis log
 
-
+> 
 
 ##### Mybatis log Free
 
-日志工具
+> https://plugins.jetbrains.com/plugin/17898-mybatis-log-free
+>
+>  日志工具
 
 ##### Statistic
 
@@ -274,7 +282,7 @@ JRebel debug 无法启动
 
 ##### XRebel (第三方安装)
 
-[下载地址](https://www.jrebel.com/products/xrebel/download)
+>  [下载地址](https://www.jrebel.com/products/xrebel/download)
 
 ```
 在启动前则需要配置 VM options: -javaagent:[/path/to/]xrebel.jar 启动参数
@@ -282,11 +290,107 @@ JRebel debug 无法启动
 
 ##### SonarLine
 
-空指针检测
+>  空指针检测
 
 ```
 
 ```
+
+##### Jump to Line
+
+>  https://plugins.jetbrains.com/plugin/14877-jump-to-line
+>
+> 代码跳转
+
+```
+```
+
+##### Key Promoter X
+
+> https://plugins.jetbrains.com/plugin/9792-key-promoter-x
+>
+>  展示快捷键
+
+##### Doc-Aware Search Everywhere
+
+> 帮助文档扩展
+>
+> https://plugins.jetbrains.com/plugin/14308-doc-aware-search-everywhere
+
+##### Rainbow brackets
+
+> 彩虹括号
+>
+> https://plugins.jetbrains.com/plugin/10080-rainbow-brackets
+
+##### Atom Material Icons
+
+> 文件图标
+>
+> https://plugins.jetbrains.com/plugin/10044-atom-material-icons
+
+##### Translation
+
+> 翻译
+>
+> https://plugins.jetbrains.com/plugin/8579-translation
+
+##### Alibaba Java Coding Guidelines (XenoAmess TPM)
+
+> 阿里代码规范插件
+>
+> https://plugins.jetbrains.com/plugin/14109-alibaba-java-coding-guidelines-xenoamess-tpm-
+
+<img src="./image/阿里代码扫描.png" alt="阿里代码扫描" style="zoom:80%;" />
+
+##### .env files support
+
+> 环境变量文件提示
+>
+> https://plugins.jetbrains.com/plugin/9525--env-files-support
+
+##### Restful Tool
+
+> restful 插件
+>
+> https://plugins.jetbrains.com/plugin/14280-restful-tool
+
+##### String Manipulation
+
+> https://plugins.jetbrains.com/plugin/2162-string-manipulation
+>
+> 字符串处理
+>
+> https://blog.csdn.net/PUYALEI/article/details/134150287
+
+
+
+### 待验证插件
+
+```
+JPA Buddy
+https://plugins.jetbrains.com/plugin/15075-jpa-buddy
+
+
+Codota
+
+
+CodeGeeX
+智能助手插件
+
+
+GsonFormatPlus JSON
+将JSON数据转变为Java实体数据
+
+
+
+```
+
+
+
+
+
+
 
 ##### 主题
 
@@ -300,6 +404,42 @@ Background Image
 
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # java 项目
 
