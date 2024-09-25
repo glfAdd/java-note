@@ -144,7 +144,46 @@ idea maven 工具提示 "找不到符号"
 
 ```
 
+##### 启动错误 11
 
+```
+Description:
+A component required a bean of type 'cn.gt.sip.service.UpdateDefaultUserServiceV2' that could not be found.
+
+Action:
+Consider defining a bean of type 'cn.gt.sip.service.UpdateDefaultUserServiceV2' in your configuration.
+
+
+解决办法: 添加 @Service 注释
+@Service("UpdateDefaultUserServiceV2")
+public class UpdateDefaultUserV2Impl implements UpdateDefaultUserServiceV2 {
+}
+```
+
+##### 启动错误 12
+
+```
+new 创建使用 spring 注释修饰的对象, 对象内 @Resource 创建对象都为 null
+
+原因: 使用 spring 修饰的对象不能再使用 new 创建, 必须用 @Resource 创建对象. @Resource 创建对象至少用 @Configuration 修饰.
+```
+
+##### 启动错误 13
+
+```
+问题:
+@Resource 创建的对象每个请求初始化一次成员变量
+
+
+解决方法:
+使用 @RequestScope 或者 @Scope("request")
+
+
+@Service("UpdateDefaultUserServiceV2")
+@RequestScope
+public class UpdateDefaultUserV2Impl implements UpdateDefaultUserServiceV2 {
+}
+```
 
 
 

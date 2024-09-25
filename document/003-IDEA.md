@@ -280,7 +280,26 @@ JRebel debug 无法启动
 在启动前则需要配置 VM options: -javaagent:[/path/to/]xrebel.jar 启动参数
 ```
 
+##### SonarLine
 
+空指针检测
+
+```
+
+```
+
+##### 主题
+
+```
+Material Theme UI
+
+
+idea 背景
+Background Image
+
+
+
+```
 
 # java 项目
 
