@@ -363,6 +363,33 @@ JRebel debug 无法启动
 >
 > https://blog.csdn.net/PUYALEI/article/details/134150287
 
+##### Mend Advise
+
+> https://plugins.jetbrains.com/plugin/13805-mend-advise
+>
+> CVE 插件
+
+```
+https://checkmarx.com/
+```
+
+### maven 漏洞扫描
+
+##### owasp dependency-check
+
+[官网](https://owasp.org/www-project-dependency-check/)
+
+```
+https://www.cnblogs.com/chopper-poet/p/14446297.html
+https://www.cnblogs.com/happylumei/p/16091297.html
+
+https://github.com/jeremylong/DependencyCheck
+https://zhuanlan.zhihu.com/p/256184896
+https://www.cnblogs.com/linyb-geek/p/16106789.html
+```
+
+
+
 
 
 ### 待验证插件
@@ -381,9 +408,6 @@ CodeGeeX
 
 GsonFormatPlus JSON
 将JSON数据转变为Java实体数据
-
-
-
 ```
 
 
@@ -405,29 +429,43 @@ Background Image
 
 ```
 
+### 弃用插件
 
+##### JFrog
 
+> https://plugins.jetbrains.com/plugin/9834-jfrog
 
+```
+https://www.jfrogchina.com
+https://jfrog.com/start-free/
+```
 
+##### MurphySec Code Scan
 
+> https://plugins.jetbrains.com/plugin/18274-murphysec-code-scan
 
+```
+https://www.murphysec.com/docs/faqs/integration/jetbrains-ide-plugin.html
+https://www.murphysec.com/
+```
 
+##### Synopsys Code Sight
 
+> https://plugins.jetbrains.com/plugin/11516-synopsys-code-sight
+>
+> CVE 插件
 
+##### maven dependency checker
 
+> https://plugins.jetbrains.com/plugin/18525-maven-dependency-checker
 
+##### maven dependency updater
 
+> https://plugins.jetbrains.com/plugin/11261-maven-dependency-updater
 
+##### Momo Code Sec Inspector (Java)
 
-
-
-
-
-
-
-
-
-
+> https://plugins.jetbrains.com/plugin/15120-momo-code-sec-inspector-java-
 
 
 
