@@ -2,8 +2,6 @@
 
 [官网](https://doc.xiaominfo.com/)
 
-
-
 版本
 
 ```
@@ -11,10 +9,6 @@ Spring Boot 2 + OpenAPI2
 
 Spring Boot 3 + OpenAPI3
 ```
-
-
-
-
 
 ##### @ApiOperation
 
@@ -63,5 +57,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class CalculatorController {
     // Controller methods...
 }
+```
+
+##### web
+
+```
+http://localhost:8080/doc.html
 ```
 

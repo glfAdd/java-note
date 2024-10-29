@@ -196,11 +196,15 @@ All Dependencies as Tree（树形式查看所有依赖）
 
 ##### JRebel and XRebel (IDEA 插件)
 
+> https://plugins.jetbrains.com/plugin/4441-jrebel-and-xrebel/versions/stable
+>
 > JRebel: Java 代码修改后不用重启系统，热部署.
 >
 > XRebel: API 分析
 >
 > [文档](https://manuals.jrebel.com/xrebel/#configuration)
+>
+> 高版本激活失败, 使用低版本 jr-ide-intellij-2024.2.1, 激活之后使用高版本
 
 ###### 激活
 
@@ -216,6 +220,7 @@ All Dependencies as Tree（树形式查看所有依赖）
 
   ```
   1. 下载地址 https://gitee.com/dssss/resource-library/blob/master/JrebelBrainsLicenseServerforJava/JrebelBrainsLicenseServerforJava-1.0-SNAPSHOT-jar-with-dependencies.jar
+  $ wget https://gitee.com/dssss/resource-library/raw/master/JrebelBrainsLicenseServerforJava/JrebelBrainsLicenseServerforJava-1.0-SNAPSHOT-jar-with-dependencies.jar
   
   2. 启动 jar
   java -jar JrebelBrainsLicenseServerforJava-1.0-SNAPSHOT-jar-with-dependencies.jar
@@ -229,7 +234,7 @@ All Dependencies as Tree（树形式查看所有依赖）
   
   
   例如
-  http://localhost:8081/ebe878f4-19da-4c5d-aa1f-49922f3ee692
+  http://localhost:8081/849ee001-bdd3-4c22-9593-3387a775935d
   ```
 
 - XRebel 激活同 JRebel

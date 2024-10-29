@@ -185,6 +185,12 @@ public class UpdateDefaultUserV2Impl implements UpdateDefaultUserServiceV2 {
 }
 ```
 
+#####
+
+```
+@EnableWebMvc
+```
+
 
 
 #### 提示

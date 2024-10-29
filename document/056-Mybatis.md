@@ -34,8 +34,5 @@ transactionManager（事务管理器）
 dataSource（数据源）
 databaseIdProvider（数据库厂商标识）
 mappers（映射器）
-
-
-
 ```
 
