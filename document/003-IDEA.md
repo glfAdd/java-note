@@ -137,11 +137,21 @@ Stack trace to UML 支持根据 JVM 异常堆栈画 UML时序图和通信图。
 
 ```
 
+
+
+
+
 ```
 
 ##### JOL Java Object Layout
 
 分析 jvm 中内存对象布局方案的工具
+
+
+
+
+
+
 
 ##### GsonFormat
 
@@ -461,6 +471,93 @@ https://www.murphysec.com/
 
 > https://plugins.jetbrains.com/plugin/15120-momo-code-sec-inspector-java-
 
+##### google java format
+
+###### idea 插件
+
+> https://plugins.jetbrains.com/plugin/8527-google-java-format
+>
+> java 代码格式化
+
+<img src="./image/google java format插件.png" alt="google java format插件" style="zoom:80%;" />
+
+IDEA 设置虚拟机参数 `Help→Edit Custom VM Options...`
+
+```
+--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED
+--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED
+--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+--add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+```
+
+###### jar 包
+
+- 方式1: 手动下载
+
+  [github](https://github.com/google/google-java-format) 下载 google-java-format-1.24.0-all-deps.jar 包
+
+- 方式2: 软件源安装
+
+  ```bash
+  $ brew install google-java-format
+  ```
+
+  
+
+```
+java -jar google-java-format-1.15.0-all-deps.jar <options> [files...]
+Usage: google-java-format [options] file(s)
+```
+
+##### checkstyle idea
+
+> https://plugins.jetbrains.com/plugin/1065-checkstyle-idea
+>
+> [github](https://github.com/checkstyle/checkstyle)
+>
+> [checkstyle 模板下载地址](https://github.com/checkstyle/checkstyle/tree/master/src/main/resources)
+>
+> 代码格式化
+
+<img src="./image/checkstyle idea插件.png" alt="checkstyle idea插件" style="zoom:80%;" />
+
+
+
+1. 创建一个 checkstyle.xml 文件
+
+```xml
+<module name="Checker">
+    <module name="TreeWalker">
+        <module name="LineLength">
+            <property name="max" value="100"/> <!-- 设置每行最大长度为100 -->
+            <property name="ignorePattern" value="^\\s*$"/> <!-- 忽略空行 -->
+        </module>
+    </module>
+</module>
+```
+
+2. Checkstyle 导入 checkstyle.xml 文件
+
+
+
+```bash
+导出配置
+
+$ java -cp checkstyle-<version>.jar com.puppycrawl.tools.checkstyle.Main -c /path/to/checkstyle.xml -f xml /path/to/your/java/files > report.xml
+
+
+
+```
+
+### VisualVM
+
+教程
+
+https://github.com/moxi624/LearningNotes/blob/master/Java/VisualVM%E5%AE%89%E8%A3%85VisualGC%E6%8F%92%E4%BB%B6/README.md
+
+https://visualvm.github.io/pluginscenters.html
 
 
 
@@ -468,6 +565,24 @@ https://www.murphysec.com/
 
 
 
+
+
+[下载地址](https://visualvm.github.io/download.html)
+
+###### 
+
+```
+https://github.com/moxi624/LearningNotes/blob/master/Java/VisualVM%E5%AE%89%E8%A3%85VisualGC%E6%8F%92%E4%BB%B6/README.md
+```
+
+###### 
+
+```
+
+
+
+
+```
 
 
 
