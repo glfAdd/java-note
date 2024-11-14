@@ -1,5 +1,37 @@
 
 
+##### 多个数据源
+
+[官网文档](https://baomidou.com/guides/dynamic-datasource/)
+
+https://book.trumandu.top/java-architect-tutorial/%E8%BF%9B%E9%98%B6%E7%BB%8F%E9%AA%8C/spring+mybatisplus%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90
+
+
+
+
+
+##### 
+
+https://blog.csdn.net/leesinbad/article/details/128296180
+
+https://www.jb51.net/program/32265101w.htm
+
+https://springdoc.cn/spring-boot-and-mybatis-plus/
+
+
+
+
+
+[官网](https://baomidou.com/)
+
+
+
+
+
+
+
+
+
 ##### 参考
 
 - [ ] https://www.cnblogs.com/xfeiyun/p/16182946.html

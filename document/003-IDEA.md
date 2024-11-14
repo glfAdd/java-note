@@ -58,22 +58,19 @@ com + F9	手动构建(Build Project)
 
 <img src="./image/idea编译设置.png" alt="idea编译设置" style="zoom:80%;" />
 
-编译内存
+##### 编译内存
 
 <img src="./image/idea编译内存.png" alt="idea编译内存" style="zoom:40%;" />
 
-##### 
+##### 预览折叠
 
 <img src="./image/代码自动缩进.png" alt="代码自动缩进" style="zoom:90%;" />
 
 <img src="./image/代码自动缩进2.png" alt="代码自动缩进" style="zoom:90%;" />
 
+##### 标签多了换行
 
-
-
-
-```
-```
+<img src="./image/idea标签多了换行.png" alt="idea标签多了换行" style="zoom:80%;" />
 
 
 
@@ -263,9 +260,48 @@ https://cloud.tencent.com/developer/article/2222426
 
    <img src="/Users/glfadd/Downloads/source/java-note/document/image/打开自动make.png" alt="打开自动make" style="zoom:80%;" />
 
+
+
+###### 问题 2
+
+JRebel debug 无法启动
+
+<img src="./image/JRebel debug 无法启动.png" alt="JRebel debug 无法启动" style="zoom:80%;" />
+
+###### 快捷键
+
+```
+Ctrl + Shift + F9					编译
+Command + F9
+
+
+
+```
+
+
+
+##### XRebel (第三方安装)
+
+>  如果 IDEA 安装了插件就不用再次安装, 不使用 IDEA 插件, 在其他地方运行的时候使用这种方式 
+>
+>  不使用插件的时候
+>
+>  [下载地址](https://www.jrebel.com/products/xrebel/download)
+
+```
+1. 下载
+
+
+2. 在 "编辑配置" -> "虚拟机参数" 增加参数
+-javaagent:[/path/to/]xrebel.jar
+-javaagent:/Users/glfadd/opt/xrebel/xrebel.jar
+```
+
 ###### 使用
 
-XRebel web 地址 http://localhost:48085/xrebel
+XRebel web 地址 项目根 url 后面输入/xrebel
+
+http://localhost:8080/xrebel
 
 <img src="/Users/glfadd/Downloads/source/java-note/document/image/XRebel 页面.png" alt="XRebel 页面" style="zoom:80%;" />
 
@@ -284,23 +320,26 @@ web 页面提示如下信息
 
 <img src="/Users/glfadd/Downloads/source/java-note/document/image/XRebel 问题1.png" alt="XRebel 问题1" style="zoom:100%;" />
 
-```
-
-```
-
 ###### 问题 2
 
-JRebel debug 无法启动
+```
+问题描述:
+XRebel 启动速度慢
 
-<img src="./image/JRebel debug 无法启动.png" alt="JRebel debug 无法启动" style="zoom:80%;" />
 
-##### XRebel (第三方安装)
+解决办法:
+从 "编辑配置" 里面 debug, XRebel 启动速度快
+```
 
->  [下载地址](https://www.jrebel.com/products/xrebel/download)
+###### 问题 3
 
 ```
-在启动前则需要配置 VM options: -javaagent:[/path/to/]xrebel.jar 启动参数
+2024-11-14 16:15:19.222 XRebel: WARNING 
+2024-11-14 16:15:19.222 XRebel: WARNING You have multiple '/Users/glfadd/Library/Application Support/JetBrains/IntelliJIdea2024.1/plugins/jr-ide-idea/lib/xrebel/xrebel.jar's as -javaagent in your server startup script
+2024-11-14 16:15:19.222 XRebel: WARNING 
 ```
+
+
 
 ##### SonarLine
 
