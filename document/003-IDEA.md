@@ -426,6 +426,51 @@ XRebel 启动速度慢
 https://checkmarx.com/
 ```
 
+##### TreeInfotip
+
+> https://plugins.jetbrains.com/plugin/12994-treeinfotip
+>
+> 代码添加水印描述
+
+<img src="./image/TreeInfotip插件.gif" alt="TreeInfotip插件" style="zoom:80%;" />
+
+```
+
+
+```
+
+##### 
+
+```
+
+```
+
+##### 
+
+```
+
+```
+
+##### 
+
+```
+
+```
+
+##### 
+
+```
+
+```
+
+##### 
+
+```
+
+```
+
+
+
 ### maven 漏洞扫描
 
 ##### owasp dependency-check
