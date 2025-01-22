@@ -1,6 +1,6 @@
 [TOC]
 
-### 设置
+# 设置
 
 ```
 -Xms512m 设置初时的内存大小，提高Java程序的启动速度
@@ -72,9 +72,70 @@ com + F9	手动构建(Build Project)
 
 <img src="./image/idea标签多了换行.png" alt="idea标签多了换行" style="zoom:80%;" />
 
+##### 代码提示忽略大小写
+
+<img src="./image/idea代码提示忽略大小写.png" alt="idea代码提示忽略大小写" style="zoom:90%;" />
+
+##### 注释设置
+
+<img src="./image/idea注释设置1.png" alt="idea注释设置" style="zoom:80%;" />
+
+<img src="./image/idea注释设置2.png" alt="idea注释设置2" style="zoom:100%;" />
+
+# 快捷键
+
+```
+command + shift + F12				代码窗口最大化
+command + E									最近打开文件
+Ctrl + Shift + F4						关闭当前小窗口
+command + F12								浮动窗口显示方法
 
 
-### 插件
+
+
+```
+
+# 插件
+
+##### 插件安装位置
+
+```
+Windows：%USERPROFILE%\.IntelliJIdea<version>\config\plugins
+macOS：~/Library/Application Support/JetBrains/IntelliJIdea<version>/plugins
+Linux：~/.config/JetBrains/IntelliJIdea<version>/plugins
+```
+
+
+
+##### 插件主页
+
+https://plugins.jetbrains.com/
+
+##### QuickTab
+
+> https://plugins.jetbrains.com/plugin/22849-quicktab
+>
+> 在小窗口快速算选择标签
+>
+> Press alt + a to start the plugin
+
+<img src="./image/插件-窗口选择标签.png" alt="插件-窗口选择标签" style="zoom:100%;" />
+
+##### Easy-tabs
+
+> https://plugins.jetbrains.com/plugin/22047-easy-tabs
+>
+> 标签显示编号
+
+<img src="./image/插件-标签选择显示编号.png" alt="插件-标签选择显示编号" style="zoom:100%;" />
+
+
+
+
+
+
+
+
 
 ##### SequenceDiagram Core
 
@@ -439,13 +500,24 @@ https://checkmarx.com/
 
 ```
 
-##### 
+##### AceJump
+
+> https://plugins.jetbrains.com/plugin/7086-acejump
+>
+> 根据字体跳转
 
 ```
-
+按两次
+Ctrl + ;
+或
+Command + ;
 ```
 
-##### 
+##### Database Navigator
+
+> https://plugins.jetbrains.com/plugin/1800-database-navigator
+>
+> 数据库 navicate
 
 ```
 
@@ -667,6 +739,16 @@ https://github.com/moxi624/LearningNotes/blob/master/Java/VisualVM%E5%AE%89%E8%A
 
 
 ```
+
+# debug
+
+##### 快捷键
+
+
+
+
+
+
 
 
 
