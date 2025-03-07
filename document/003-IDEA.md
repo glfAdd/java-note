@@ -39,13 +39,6 @@ https://blog.csdn.net/qq_35472880/article/details/102911213
 https://blog.csdn.net/qq_34033853/article/details/123710220
 ```
 
-
-
-```
-com + F9	手动构建(Build Project)
-(Rebuild Project)
-```
-
 ##### 文件树
 
 <img src="./image/Project视图中的时间以及文件大小.png" alt="Project视图中的时间以及文件大小" style="zoom:80%;" />
@@ -82,17 +75,20 @@ com + F9	手动构建(Build Project)
 
 <img src="./image/idea注释设置2.png" alt="idea注释设置2" style="zoom:100%;" />
 
+##### 主题
+
+```
+
+```
+
 # 快捷键
 
 ```
-command + shift + F12				代码窗口最大化
-command + E									最近打开文件
+Command + shift + F12				代码窗口最大化
+Command + E									最近打开文件
 Ctrl + Shift + F4						关闭当前小窗口
-command + F12								浮动窗口显示方法
-
-
-
-
+Command + F12								浮动窗口显示方法
+Command + F9								手动构建(Build Project)
 ```
 
 # 插件
@@ -105,11 +101,21 @@ macOS：~/Library/Application Support/JetBrains/IntelliJIdea<version>/plugins
 Linux：~/.config/JetBrains/IntelliJIdea<version>/plugins
 ```
 
-
-
 ##### 插件主页
 
 https://plugins.jetbrains.com/
+
+##### sonarqube for ide
+
+> https://plugins.jetbrains.com/plugin/7973-sonarqube-for-ide
+>
+> 代码质量检测工具
+
+```
+
+```
+
+
 
 ##### QuickTab
 
@@ -128,14 +134,6 @@ https://plugins.jetbrains.com/
 > 标签显示编号
 
 <img src="./image/插件-标签选择显示编号.png" alt="插件-标签选择显示编号" style="zoom:100%;" />
-
-
-
-
-
-
-
-
 
 ##### SequenceDiagram Core
 
@@ -205,12 +203,6 @@ Stack trace to UML 支持根据 JVM 异常堆栈画 UML时序图和通信图。
 
 分析 jvm 中内存对象布局方案的工具
 
-
-
-
-
-
-
 ##### GsonFormat
 
  json 转对象
@@ -220,10 +212,6 @@ Stack trace to UML 支持根据 JVM 异常堆栈画 UML时序图和通信图。
 > https://plugins.jetbrains.com/plugin/10119-mybatisx
 >
 >  mapper 和 xml 跳转
-
-##### Mybatis log
-
-> 
 
 ##### Mybatis log Free
 
@@ -320,8 +308,6 @@ https://cloud.tencent.com/developer/article/2222426
    Windows 系统 `Ctrl + Shift + Alt + /` 选择 `Registry`, Mac 系统 `shift + option + command + /` 勾选 `compiler.automake.allow.when.app.running`, 或者使用页面操作
 
    <img src="/Users/glfadd/Downloads/source/java-note/document/image/打开自动make.png" alt="打开自动make" style="zoom:80%;" />
-
-
 
 ###### 问题 2
 
@@ -493,12 +479,7 @@ https://checkmarx.com/
 >
 > 代码添加水印描述
 
-<img src="./image/TreeInfotip插件.gif" alt="TreeInfotip插件" style="zoom:80%;" />
-
-```
-
-
-```
+<img src="./image/TreeInfotip插件.gif" alt="TreeInfotip插件" style="zoom:100%;" />
 
 ##### AceJump
 
@@ -574,19 +555,6 @@ CodeGeeX
 
 GsonFormatPlus JSON
 将JSON数据转变为Java实体数据
-```
-
-##### 主题
-
-```
-Material Theme UI
-
-
-idea 背景
-Background Image
-
-
-
 ```
 
 ### 弃用插件
@@ -748,12 +716,6 @@ https://github.com/moxi624/LearningNotes/blob/master/Java/VisualVM%E5%AE%89%E8%A
 
 
 
-
-
-
-
-
-
 # java 项目
 
 ```
@@ -785,17 +747,9 @@ maven-archetype-webapp				用于生成示例Maven Webapp项目的原型
 ##### 
 
 ```
-
 $ mvn archetype:generate
 
-
-
 Maven 插件允许我们从已有项目生成一个模板项目。在项目根目录下执行mvn archetype:create-from-project命令即可将该项目生成一个项目模板，生成的项目原型被保存在路径target/generated-sources/archetype
-
-
-
-
-
 ```
 
 
